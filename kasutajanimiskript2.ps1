@@ -1,5 +1,7 @@
 ﻿    $kasutajaparool = ConvertTo-SecureString 'Parool1!' -AsPlainText -Force
 #kasutaja loomine ees-perenimi ning tõlge nimi.perekonnanimi
+    $Eesnimi = Read-Host "Sisesta oma eesnimi"
+    $Perenimi = Read-Host "Sisesta oma perekonnanimi"
     $kasutajanimi = $Eesnimi.ToLower() + "." + $Perenimi.ToLower()
     $täisnimi = $eesnimi.ToLower() + "." + $Perenimi
     $kirjeldus = "Lokaalne kasutaja -" + $kasutajanimi
